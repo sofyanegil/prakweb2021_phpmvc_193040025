@@ -15,12 +15,12 @@ $(function () {
     $('.modal-footer button[type=submit]').html('Ubah Data');
     $('.modal-body form').attr(
       'action',
-      'http://localhost/prakweb2021_phpmvc_193040025/public/mahasiswa/ubah'
+      'http://localhost:8080/prakweb2021_phpmvc_193040025/public/mahasiswa/ubah'
     );
     const id = $(this).data('id');
 
     $.ajax({
-      url: 'http://localhost/prakweb2021_phpmvc_193040025/public/mahasiswa/getubah',
+      url: 'http://localhost:8080/prakweb2021_phpmvc_193040025/public/mahasiswa/getubah',
       data: { id: id },
       method: 'post',
       dataType: 'json',
